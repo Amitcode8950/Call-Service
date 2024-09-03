@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="WhatsApp Image 2024-08-25 at 8.04.46 PM (3).jpeg" type="image/x-icon">
+    <title>Call Service</title>
+    <link rel="stylesheet" href="ding.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <a href="#top">
+        <div class="load">
+            <i class="fa-solid fa-arrow-up"></i>
+        </div>
+    </a>
+    <header>
+        <nav>
+            <ul class="sidebar">
+                <li onclick="hideSidebar()"><a href="#"><i class="fa-solid fa-xmark"></i></a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+            <ul>
+                <li><a href=""><h1>Call<span>S</span>ervices</h1></a></li>
+                <li class="hideOnMobile"><a href="#home">Home</a></li>
+                <li class="hideOnMobile"><a href="#about">About</a></li>
+                <li class="hideOnMobile"><a href="#services">Services</a></li>
+                <li class="hideOnMobile"><a href="#contact">Contact</a>
+                </li>
+
+                <li class="menu-button" onclick=showSidebar()><a href="#"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 96 960 960" width="26"><path d="M120 816v-60h720v60H120Zm0-210v-60h720v60H120Zm0-210v-60h720v60H120Z"/></svg></a></li>
+
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h2>Welcome to My <span>C</span>all <span>S</span>ervices</h2>
+            <p>My Call services journey starts here.learn more <a href="#about">about us</a>.</p>
+            <button onclick="scrollToSection('services')">Get Started</button>
+        </div>
+    </section>
+    <section id="about">
+        <h2>About Us</h2>
+        <div class="text-img-about">
+            <div class="about-img">
+                <img src="WhatsApp Image 2024-08-25 at 5.42.05 PM.jpeg" alt="imag">
+            </div>
+            <div class="about-text">
+                <h1 class="abotput">Call Service</h1>
+                <div class="para1">
+                    <p>Welcome to Call Service - the dedication call service where help is always just a phone call
+                        away. we are committed to providing immediate, reliable and compassionate support to anyone.
+                        who need it. </p>
+                    <h1>Our Mission is to make sure that you never have to face life challenges alone</h1>
+                </div>
+                <div class="para">
+                    <p>whether you are seeking advice, guidance, or just someone to listen, our team experienced
+                        professionals is here to assist your 24/7. we offer a wide range of service tailored to your
+                        needs, ensuring that you receive the best possible support in every situation </p>
+                    <h6>No matter the issue ,big or small, we are here for you, Reach out to us through our website,
+                        and let's take step together</h6>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Our Services</h2>
+        <div class="services-container">
+            <div class="service-box1">
+                <h3>24/7 Assistance</h3>
+                <p>
+                <h2>Always-On- Helpdesk</h2>
+                </p>
+            </div>
+            <div class="service-box2">
+                <h3>Mental Health Support</h3>
+                <p>
+                <h2>Mindcare Support Line</h2>
+                </p>
+            </div>
+            <div class="service-box3">
+                <h3>Virtual concierge</h3>
+                <p>
+                <h2>Personal services</h2>
+                </p>
+            </div>
+        </div>
+    </section>
+    <section id="contact" class="amit">
+        <div id="contact">
+            <div class="contact-form">
+                <h2>Contact Me</h2>
+
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+                <label for="phone">Phone no</label>
+                <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email id" required>
+
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" placeholder="Were you face problem" required>
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="6" placeholder="Example your problem and give solution"
+                    required></textarea>
+
+                <button type="button">SUBMIT</button>
+
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="socal">
+            <div class="important">
+                <a href=""><i class="fa-solid fa-phone"></i> +91 9999999999</a>
+                <a href=""><i class="fa-solid fa-globe"></i>www.callservics.com</a>
+                <a href=""><i class="fa-solid fa-envelope"></i>callservice012@gmail.com</a>
+            </div>
+            <div class="important2">
+                <a href=""><i class="fa-brands fa-facebook"></i>callservice</a>
+
+                <a href=""> <i class="fa-brands fa-twitter"></i>Callservics</a>
+                <a href=""><i class="fa-brands fa-instagram"></i>Callservics</a>
+            </div>
+        </div>
+
+
+
+
+
+        <p>&copy; 2024 Amit kumar Call Services</p>
+    </footer>
+
+    <script>
+        function scrollToSection(sectionId) {
+  document.getElementById(sectionId).scrollIntoView({ behavior: 'smooth' });
+}
+
+
+        function showSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'flex'
+}
+function hideSidebar(){
+  const sidebar = document.querySelector('.sidebar')
+  sidebar.style.display = 'none'
+}
+    </script>
+</body>
+</html>
